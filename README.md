@@ -8,7 +8,7 @@ This project is a technical documentation page dedicated to the Python web frame
 You can view the live page here:
 [Technical Documentation Page Live Demo](https://kelv48.github.io/Technical-Documentation-Page/)
 
-#Screenshot
+# Screenshot
 ![Technical Documentation Page Screenshot](https://github.com/Kelv48/Technical-Documentation-Page/blob/main/technicaldocumentationpage.png)
 
 ## 📖 About the Project

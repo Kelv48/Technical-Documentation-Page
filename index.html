@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Flask Documentation</header>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#Setup">Setup</a>
+        <a class="nav-link" href="#Routing">Routing</a>
+        <a class="nav-link" href="#Templates">Templates</a>
+        <a class="nav-link" href="#Handling_Requests">Handling Requests</a>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>Flask is a lightweight WSGI web application framework in Python. It is designed with simplicity and
+                flexibility in mind.</p>
+            <p>It allows developers to quickly build web applications without extensive configuration.</p>
+            <code>from flask import Flask</code>
+            <p>With Flask, you can build anything from a simple "Hello, World!" app to complex web applications.</p>
+        </section>
+
+        <section class="main-section" id="Setup">
+            <header>Setup</header>
+            <p>To get started with Flask, you'll need to install it via pip:</p>
+            <code>pip install flask</code>
+            <p>Once installed, you can create a new Flask application by importing the Flask module:</p>
+            <code>
+                from flask import Flask<br>
+                app = Flask(__name__)
+            </code>
+            <ul>
+                <li>Step 1: Install Flask</li>
+                <li>Step 2: Create a new Python file</li>
+                <li>Step 3: Import Flask and initialize your app</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Routing">
+            <header>Routing</header>
+            <p>Routing in Flask is simple. You define routes using the <code>@app.route()</code> decorator:</p>
+            <code>
+                @app.route('/')<br>
+                def hello_world():<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;return 'Hello, World!'
+            </code>
+            <p>Each route is associated with a function that gets called when the route is accessed.</p>
+            <ul>
+                <li>Define a route using the decorator</li>
+                <li>Associate a function with the route</li>
+                <li>Return content from the function</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Templates">
+            <header>Templates</header>
+            <p>Flask supports templating using Jinja2. This allows you to separate your HTML from Python code:</p>
+            <code>
+                from flask import render_template<br>
+                @app.route('/home')<br>
+                def home():<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;return render_template('home.html')
+            </code>
+            <p>Create a template file in a <code>templates</code> directory and render it using the
+                <code>render_template</code> function.</p>
+            <ul>
+                <li>Store templates in a dedicated folder</li>
+                <li>Use Jinja2 syntax for dynamic content</li>
+                <li>Render templates from your view functions</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Handling_Requests">
+            <header>Handling Requests</header>
+            <p>Flask makes it easy to handle different types of HTTP requests (GET, POST, etc.).</p>
+            <code>
+                from flask import request<br>
+                @app.route('/submit', methods=['POST'])<br>
+                def submit():<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;data = request.form['data']<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;return f'You submitted: {data}'
+            </code>
+            <p>Using the <code>request</code> object, you can access form data, query parameters, and more.</p>
+            <ul>
+                <li>Use <code>request</code> to access incoming data</li>
+                <li>Specify allowed HTTP methods with the <code>methods</code> parameter</li>
+                <li>Process and return data from your routes</li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,8 +1,15 @@
 # Flask Technical Documentation Page
 
+## Overview
+This project is a part of the [FreeCodeCamp Responsive Web Design Certification](https://www.freecodecamp.org/learn/).
 This project is a technical documentation page dedicated to the Python web framework **Flask**. It is designed to provide a clean, user-friendly reference for getting started with Flask, covering essential topics such as setup, routing, templates, and handling requests.
 
-![Preview of the Documentation Page]()
+#Project Link
+You can view the live page here:
+[Technical Documentation Page Live Demo](https://kelv48.github.io/Technical-Documentation-Page/)
+
+#Screenshot
+![Technical Documentation Page Screenshot](https://github.com/Kelv48/Technical-Documentation-Page/blob/main/technicaldocumentationpage.png)
 
 ## 📖 About the Project
 
